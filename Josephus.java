@@ -7,13 +7,13 @@ public class Josephus {
     List<T>newArr = new ArrayList<>();
     while (arr.size() > 0) {
       for (int i = 0; i < arr.size(); i++) {
+        cnt--;
         if (cnt == 0) {
           newArr.add(arr.get(i));
           arr.remove(i);
+          i--;
           cnt = k;
-          break;
         }
-        cnt--;
       }
     }
     return newArr;
