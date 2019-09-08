@@ -4,7 +4,7 @@ public class Josephus {
   public static <T> List<T> josephusPermutation(final List<T> items, final int k) {
     int cnt = k;
     List<T> arr = items;
-    List<T>newArr = new ArrayList<>();
+    List<T> newArr = new ArrayList<>();
     while (arr.size() > 0) {
       for (int i = 0; i < arr.size(); i++) {
         cnt--;
